@@ -27,8 +27,8 @@ let input = readLine()
 var numbers : [Int] = []
 
 // Populate the array
-for _ in 1...5 {
-    numbers.append( random(between: 1, and: 20) )
+for _ in 1...10 {
+    numbers.append( random(between: 1, and: 50) )
 }
 
 // Show the user the contents of the array
@@ -79,9 +79,7 @@ for _ in 0...numbers.count - 1 {
 // ----------- Final part of the program, show the sorted list -----------
 print("-----")
 print("The contents of the sorted list:")
-for i in 0...sortedNumbers.count - 1 {
-    print("Index \(i), value: \(sortedNumbers[i])")
+for i in 0...numbers.count - 1 {
+    print("Index \(i), value: \(numbers[i])")
 }
 print("-----")
-
-
